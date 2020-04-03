@@ -1,0 +1,277 @@
+@mixin font {
+  font-family: "HelveticaNeueCyr-light";
+  font-size: 18px;
+  color: rgb(219, 157, 41);
+  text-transform: lowercase;
+  line-height: 0.2em;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Black";
+  src: url("../fonts/HelveticaNeueCyr-Black.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/HelveticaNeueCyr-Black.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/HelveticaNeueCyr-Black.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/HelveticaNeueCyr-Black.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "HelveticaNeueCyr-Roman";
+  src: url("../fonts/HelveticaNeueCyr-Roman.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/HelveticaNeueCyr-Roman.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "HelveticaNeueCyr-Italic";
+  src: url("../fonts/HelveticaNeueCyr-Italic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/HelveticaNeueCyr-Italic.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/HelveticaNeueCyr-Italic.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/HelveticaNeueCyr-Italic.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/HelveticaNeueCyr-Italic.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/HelveticaNeueCyr-Italic.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "HelveticaNeueCyr-Light";
+  src: url("../fonts/HelveticaNeueCyr-Light.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/HelveticaNeueCyr-Light.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+* { 
+   box-sizing: border-box;
+}
+body {
+  background-color: #202020;
+  background-image: url(../img/bacground.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "HelveticaNeueCyr-Roman";
+  color: #2d3033;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5em;
+  height: 100%;
+  line-height: 1.5em;
+  letter-spacing: 0.12em;
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+div,
+p,
+form,
+input,
+span,
+button {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 > {
+  font-size: 107px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "HelveticaNeueCyr-Black";
+  padding: 0px 0px 0px 100px;
+  margin: 40px 0px 0px 0px;
+  line-height: 0.1em;
+}
+h2 {
+  font-size: 36px;
+  font-family: "HelveticaNeueCyr-Black";
+  text-align: center;
+  color: #fff;
+  line-height: 1.5em;
+  letter-spacing: 0.12em;
+}
+h3 {
+  font-size: 30px;
+  line-height: 1.5em;
+  letter-spacing: 0.12em;
+}
+h4 {
+  font-size: 24px;
+  line-height: 1.5em;
+  letter-spacing: 0.12em;
+}
+h5 {
+  font-size: 18px;
+}
+
+p {
+  padding: 0;
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+a {
+  color: rgba(250, 249, 248, 0.9);
+  line-height: 1.5em;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a,
+button,
+input {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+input,
+input:hover,
+input:focus,
+input:active,
+button,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+}
+
+//1 Ecran
+h1 {
+  font-size: 107px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "HelveticaNeueCyr-Black";
+  padding: 0px 0px 0px 100px;
+  margin: 40px 0px 0px 0px;
+  line-height: 0.1em;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1;
+  }
+}
+
+.header__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+.header__logo {
+  flex: 0 0 60px;
+  z-index: 2;
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header__tel {
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  .header__phone img {
+    width: 20px;
+    margin: 0px 5px 0px 0px;
+    cursor: pointer;
+  }
+  .header__fone {
+    font-size: 16px;
+    font-family: "HelveticaNeueCyr-roman";
+    &:hover {
+      color: #c5a63c;
+    }
+  }
+}
+.header__menu {
+  z-index: 2;
+}
+.header__burger {
+  display: none;
+}
+.header__list {
+  display: flex;
+  .header__link {
+    font-size: 16px;
+    color: rgb(247, 242, 242);
+    text-transform: capitalize;
+    padding: 0px 10px 0px 0px;
+    padding: 10px;
+    &:hover {
+      color: #c5a63c;
+    }
+  }
+}
+.header__description {
+  @include font;
+  display: inline-block;
+  margin: 100px 0px 0px 130px;
+  border: 2px solid #fff;
+  padding: 20px 20px 20px 20px;
+  cursor: pointer;
+}
+.header__description:hover {
+  color: #fff;
+  border: 2px solid #c5a63c;
+}
+.header__title {
+  font-size: 30px;
+  padding: 300px 0px 0px 360px;
+  color: #fff;
+}
+
+.about {
+  padding: 100px 0 0 0;
+}
+.about__text {
+  p {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+//------------------------------media queries---------------------------------------
